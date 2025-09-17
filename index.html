@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Freshman Experience</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-white">
+    <img src="media/png/home.png" alt="home" style="width:36px; height:36px;"><p>Home</p>
+  </a>
+  <a href="#Video" class="w3-bar-item w3-button w3-padding-large w3-white">
+    <img src="media/png/video.png" alt="video" style="width:36px; height:36px;"><p>Video</p>
+  </a>
+  <a href="#Gallery" class="w3-bar-item w3-button w3-padding-large w3-white">
+    <img src="media/png/gallery.png" alt="gallery" style="width:36px; height:36px;"><p>Gallery</p>
+  </a>
+  <a href="#About" class="w3-bar-item w3-button w3-padding-large w3-white">
+    <img src="media/png/user.png" alt="about" style="width:36px; height:36px;"><p>About</p>
+  </a>
+</nav>
+
+<!-- Navbar for small screens -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+    <a href="#Video" class="w3-bar-item w3-button" style="width:25% !important">Video</a>
+    <a href="#Gallery" class="w3-bar-item w3-button" style="width:25% !important">Gallery</a>
+    <a href="#About" class="w3-bar-item w3-button" style="width:25% !important">About</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+
+  <!-- Header -->
+  <header id="home">
+    <h1>The Freshman Experience</h1>
+    <p class="subheading">A look into the life of a freshman at NYU Abu Dhabi</p>
+  </header>
+
+  <!-- Video Section -->
+  <section id="Video" class="section">
+    <h2>"The Freshman Experience" Video</h2>
+    <hr class="section-hr">
+    <div class="video-container">
+      <iframe src="https://drive.google.com/file/d/1L5k8WoB2WsHLlGFGIaolEivN2y3UjTYM/preview" 
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="Gallery" class="section">
+    <h2> Set Gallery</h2>
+    <hr class="section-hr">
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="media/seating.jpg" alt="seating">
+        </li>
+        <li class="slide">
+          <img src="media/class.jpg" alt="clas">
+        </li>
+        <li class="slide">
+          <img src="media/market_place.jpg" alt="market_place">
+        </li>
+        <li class="slide">
+          <img src="media/classes.jpg" alt="classes">
+        </li>
+        <!-- Add more images here -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="About" class="section">
+    <h2>About The Movie</h2>
+    <hr class="section-hr">
+    <p class="about-text">
+      Hello! My name is Tyler Sauls, I'm a freshman at NYU Abu Dhabi planning to major in Computer Science. 
+      The inspiration behind the movie comes from the funny and relatable experiences my friends and I had during 
+      our first few weeks on campus. I wanted to capture those moments, and that is how my movie was created!
+    </p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
